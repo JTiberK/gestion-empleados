@@ -1,7 +1,12 @@
+from flask import Flask, request, jsonify
 from flask import Flask, render_template, request
 from clases import Empleado, Gerente
 
 app = Flask(__name__)
+
+@app.route('/health', methods=['GET'])  
+def health_check():  
+    return jsonify({"status": "ok", "message": "Servidor activo"}), 200
 
 @app.route('/')
 def formulario():
@@ -25,3 +30,5 @@ def calcular():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
