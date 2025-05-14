@@ -83,4 +83,10 @@ Este proyecto es una aplicación web construida con **Python** y **Flask** que p
    ```bash
    172.31.84.35:5000
 7. Tambien hemos añadido el health para ver estado servidor `Verlo en los commits`
+8. Antes en la ficha de seguridad de nuestra instancia EC2 hemos habilitado el puerto 5000
+   ```
+   Grupos de seguridad
+   sg-0121a8b4ef7d0f1d2 (launch-wizard-1)
+
+   TCP  5000   0.0.0.0
    
